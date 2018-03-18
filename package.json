@@ -1,32 +1,21 @@
 {
+	"name": "deezloader-app",
+	"productName": "Deezloader",
+	"version": "3.1.0",
+	"description": "Download music from Deezer",
+	"main": "main.js",
+	"author": "ExtendLord",
 	"license": "CC-BY-NC-SA-4.0",
-	"devDependencies": {
-		"electron": "latest",
-		"electron-builder": "latest"
-	},
-	"scripts": {
-		"dist": "electron-builder --ia32 --x64",
-		"pack": "electron-builder --dir",
-		"postinstall": "electron-builder install-app-deps"
-	},
-	"build": {
-		"appId": "extlrd.DeezLoader",
-		"productName": "DeezLoader",
-		"copyright": "Copyright © 2017 ExtendLord",
-		"asar": false,
-		"win":{
-			"icon": "res/icon.ico"
-		},
-		"linux":{
-			"target": "AppImage"
-		},
-		"mac":{
-			"icon": "res/icon.icns"
-		},
-		"nsis": {
-			"oneClick": false,
-			"allowToChangeInstallationDirectory": true,
-			"installerLanguages": "en_US"
-		}
+	"dependencies": {
+		"async": "latest",
+		"electron-context-menu": "latest",
+		"electron-window-state-manager": "latest",
+		"express": "latest",
+		"fs-extra": "latest",
+		"flac-metadata": "latest",
+		"package.json": "latest",
+		"request": "latest",
+		"socket.io": "latest",
+		"requestretry": "latest"
 	}
 }
